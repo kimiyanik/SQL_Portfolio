@@ -17,7 +17,9 @@ The dataset has 2 tables called 'plans' and 'subscriptions'.
 <p align="center">
   <strong>Questions answered in this project:</strong>
 </p>
-Data Analysis Questions
+
+Data Analysis Questions:
+
 - How many customers has Foodie-Fi ever had?
 - What is the monthly distribution of trial plan start_date values for our dataset - use the start of the month as the group by value
 - What plan start_date values occur after the year 2020 for our dataset? Show the breakdown by count of events for each plan_name
@@ -31,6 +33,7 @@ Data Analysis Questions
 - How many customers downgraded from a pro monthly to a basic monthly plan in 2020?
 
 Challenge Payment Question
+
 The Foodie-Fi team wants to create a new payments table for the year 2020 that includes amounts paid by each customer in the subscriptions table with the following requirements:
 
 - monthly payments always occur on the same day of month as the original start_date of any monthly paid plan
