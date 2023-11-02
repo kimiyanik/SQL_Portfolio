@@ -1,4 +1,3 @@
-
 --How many customers has Foodie-Fi ever had?
 
 SELECT
@@ -28,13 +27,11 @@ WHERE start_date >= '2021-01-01'
 GROUP BY plan_name
 ORDER BY 1
 
-
 --What is the customer count and percentage of customers who have churned rounded to 1 decimal place?
 SELECT
 COUNT(DISTINCT CASE WHEN plan_id = 4 THEN customer_id END) AS customer_count,
 ROUND(100 * COUNT(DISTINCT CASE WHEN plan_id = 4 THEN customer_id END)/COUNT(DISTINCT customer_id) ,1) AS churned_per
 FROM foodie_fi.subscriptions
-
 
 
 --How many customers have churned straight after their initial free trial - what percentage is this rounded to the nearest whole number?
@@ -49,7 +46,6 @@ SELECT
 COUNT(DISTINCT CASE WHEN plan_id = 4 AND prev_plan = 0 THEN customer_id END) AS count_of_churned_after_trial,  
 ROUND(100 * COUNT (CASE WHEN plan_id = 4 AND prev_plan = 0 THEN customer_id END) /COUNT(DISTINCT customer_id) ,1) AS percent_churn
 FROM prpl
-
 
 
 -- What is the number and percentage of customer plans after their initial free trial?
@@ -72,7 +68,6 @@ WHERE plan_id = 0
 GROUP BY 1
 
 
-
 -- What is the customer count and percentage breakdown of all 5 plan_name values at 2020-12-31?
 WITH nextd AS(
 SELECT 
@@ -93,14 +88,12 @@ WHERE next_date IS NULL
 GROUP BY 1
 
 
-
 --How many customers have upgraded to an annual plan in 2020?
 SELECT 
 COUNT(customer_id) AS countOfUP
 FROM foodie_fi.subscriptions 
 WHERE start_date BETWEEN '2020-01-01' AND '2020-12-31'
 AND plan_id = 3
-
 
 
 --How many days on average does it take for a customer to an annual plan from the day they join Foodie-Fi? 
@@ -134,7 +127,6 @@ ROUND(AVG(e.annual_date - b.begininnig)) AS average_days_to_annual
 FROM ends AS e
 LEFT JOIN begin_dates AS b
 USING(customer_id)
-
 
 
 --Can you further breakdown this average value into 30 day periods (i.e. 0-30 days, 31-60 days etc)
@@ -186,7 +178,6 @@ CASE WHEN convert_days BETWEEN 0 and 30 then'0 to 30'
  GROUP BY 1;
 
 
-
  --How many customers downgraded from a pro monthly to a basic monthly plan in 2020?
 WITH pplan AS(
 SELECT 
@@ -204,8 +195,7 @@ FROM pplan
 WHERE plan_id = 1 AND pre_plan = 2;
 
 
-
---C. Challenge Payment Question
+--Challenge Payment Question
 
 --The Foodie-Fi team wants you to create a new payments table for the year 2020 that includes amounts paid by each customer in the subscriptions table with the following requirements:
 
@@ -218,9 +208,6 @@ CREATE TABLE payments(
   amount DECIMAL(5,2),
   payment_order INT
   );
-
-
-
 
    
 WITH next_d AS(
