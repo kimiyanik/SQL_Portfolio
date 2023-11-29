@@ -11,6 +11,13 @@
   https://www.kaggle.com/datasets/sadiqshah/bike-sales-in-europe/data
 </p>
 
+## Visualization
+
+<p align="center">
+  <em>You can find the Tableau dashboard I created for this analysis in the link below:</em>
+  https://public.tableau.com/app/profile/kimiya.rashidinik/viz/BikeSalesAnalysis_17012792859400/Dashboard1
+</p>
+
 ## Questions Answered
 
 <p align="center">
