@@ -1,12 +1,4 @@
-<h1 align="center">Bike Sales Analysis</h1>
 
-<p align="center">
-  <strong>This is a project analysing the bike bying behaviour in several countries. The dataset has 18 columns on demographics and sales KPIs. I have used Microsoft SQL Server for this project. </strong>
-</p>
-
-## Dataset
-
-<p align="center">
   <em>The dataset used in this project is available on Kaggle at the following link:</em>
   https://www.kaggle.com/datasets/sadiqshah/bike-sales-in-europe/data
 </p>
@@ -16,35 +8,36 @@
 <p align="center">
   <em>You can find the Tableau dashboard I created for this analysis in the link below:</em>
   https://public.tableau.com/app/profile/kimiya.rashidinik/viz/BikeSalesAnalysis_17012792859400/Dashboard1
-</p>
+# Bike Sales Analysis Project
 
-## Questions Answered
+This project aims to analyze sales data from a bike shop using Microsoft SQL Server, deriving actionable insights to improve sales performance and optimize inventory management.
 
-<p align="center">
-  <strong>Questions answered in this project:</strong>
-</p>
+## Summary
 
-- What is the total profit by country?
-- What is the total revenue by country?
-- What is the total revenue by country and product category?
-- What is the total profit by country and product category?
-- What is the global revenue performance by year?
-- What is the global profit performance by year?
-- What is the revenue according to the customer age group?
-- What is the profit according to the customer age group?
-- What is the total order quantity by customer age group?
-- What age groups are the biggest spenders, by country?
-- What gender is the biggest spender, by country?
-- How much revenue was made in Canada or France?
-- How many Bike Racks orders were made from Canada?
-- How many orders were made in Each State of France?
-- How many sales were made per category?
-- Which gender has the most amount of sales?
-- How many sales with more than 500 in Revenue were made by men?
-- What are the top-5 sales with the highest revenue?
-- How much is the Revenue of the sale with the highest revenue?
-- What is the mean Order_Quantity of orders with less than 10K in revenue?
-- How many orders were made in May of 2016?
-- How many orders were made in May,June,July of 2016?
-- What is the mean revenue of the Adults (35-64) sales group?
-- Get the mean revenue of the sales group Adults (35-64) in United States?
+### Problem Statement
+The Bike Sales Analysis project utilized Microsoft SQL Server to analyze sales data from a bike shop, aiming to identify trends, patterns, and opportunities within the dataset. The primary goal was to derive actionable insights for enhancing business strategies related to sales and inventory management.
+
+### Approach
+Using Microsoft SQL Server, the project began with data exploration, querying, and analysis of the bike sales dataset. Various SQL queries were employed to extract meaningful information, including sales trends, popular products, customer preferences, and seasonal variations in sales. Aggregation, filtering, and joining techniques were applied to derive key metrics and insights.
+
+### Key Insights
+- Monthly sales trends indicated peak seasons for bike purchases, suggesting the need for targeted marketing and inventory management during these periods.
+- Certain bike models or categories emerged as customer favorites, allowing for focused promotional strategies or stock optimization.
+- Analysis of customer demographics and purchase behavior provided insights for potential customer segmentation and tailored marketing approaches.
+- Identification of underperforming products or regions highlighted areas for improvement and resource reallocation.
+
+### Recommendations
+- Develop targeted marketing campaigns during peak sales months to capitalize on increased demand.
+- Optimize inventory by focusing on popular bike models/categories and consider expanding the product line based on customer preferences.
+- Implement customer segmentation strategies for personalized marketing and improved customer engagement.
+- Address underperforming products or regions through strategic initiatives such as promotions or market-specific strategies.
+
+This analysis, conducted using Microsoft SQL Server, offers valuable insights into bike sales patterns and customer behavior, providing actionable recommendations to enhance sales performance and optimize inventory management strategies.
+## Visualization
+You can find the Tableau dashboard I created for this analysis in the link below:
+  https://public.tableau.com/app/profile/kimiya.rashidinik/viz/BikeSalesAnalysis_17012792859400/Dashboard1
+  
+## Dataset
+The dataset used in this project is available on Kaggle at the following link: https://www.kaggle.com/datasets/sadiqshah/bike-sales-in-europe/data
+
+
